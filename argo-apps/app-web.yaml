@@ -14,3 +14,22 @@ spec:
     targetRevision: master
   syncPolicy:
     automated: {}
+
+---
+    
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: jenkins
+  namespace: argocd
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: ./argo-app-manifest
+    repoURL: https://github.com/infinity-step/project_15
+    targetRevision: master
+  syncPolicy:
+    automated: {}
