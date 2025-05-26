@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: jenkins
+  name: jenkins-helm
   namespace: argocd
 spec:
   destination:
-    namespace: default
+    namespace: jenkins
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: ./argo-app-manifest
+    chart: jenkins
     repoURL: https://infinity-step.github.io/project_14/
     targetRevision: 1.0.1
   syncPolicy:
