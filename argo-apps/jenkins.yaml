@@ -19,6 +19,6 @@ spec:
       - name: ingress.hosts[0].paths[0].pathType
         value: ImplementationSpecific
     repoURL: https://infinity-step.github.io/project_14/
-    targetRevision: 1.0.3
+    targetRevision: 1.0.1
   syncPolicy:
     automated: {}
