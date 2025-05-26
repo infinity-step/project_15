@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: ./argo-app-manifest
+    path: ./argo-apps
     repoURL: https://github.com/infinity-step/project_15
     targetRevision: master
   syncPolicy:
@@ -28,7 +28,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: ./argo-app-manifest
+    path: ./argo-apps
     repoURL: https://github.com/infinity-step/project_15
     targetRevision: master
   syncPolicy:
