@@ -66,6 +66,6 @@ data:
     receivers:
       - name: 'slack'
         slack_configs:
-          - api_url: 'https://hooks.slack.com/services/slack-api-url'
+          - api_url: '/etc/alertmanager/secrets/slack-api-url'
             channel: '#courses_notifications'
             send_resolved: true
