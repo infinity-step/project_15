@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: grafana
+  namespace: argocd
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: ./argo-app-manifest/grafana
+    repoURL: https://github.com/infinity-step/project_15
+    targetRevision: master
+  syncPolicy:
+    automated: {}
