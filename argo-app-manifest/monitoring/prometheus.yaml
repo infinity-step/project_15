@@ -47,7 +47,7 @@ data:
     - name: cpu_alerts
       rules:
       - alert: HighCPUUsage
-        expr: avg by(instance) (rate(node_cpu_seconds_total{mode="user"}[2m])) > 0.1
+        expr: avg by(instance) (rate(node_cpu_seconds_total[2m])) > 0.1
         for: 2m
         labels:
           severity: slack
