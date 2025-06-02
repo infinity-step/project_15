@@ -68,6 +68,4 @@ data:
         slack_configs:
           - api_url: 'https://hooks.slack.com/services/slack-api-url'
             channel: '#courses_notifications'
-            username: 'alertmanager'
-            icon_emoji: ':warning:'
             send_resolved: true
